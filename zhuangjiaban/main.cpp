@@ -7,19 +7,24 @@ const int kMaxVal = 255;
 
 void draw_rect(Mat &image)
 {
+	//进行二值化
 	Mat gray;
 	cvtColor(image, gray, COLOR_BGR2GRAY);
 	Mat gaussian;
 	GaussianBlur(gray, gaussian, Size(3, 3), 0);
 	Mat thresh;
 	threshold(gray, thresh, kThreashold, kMaxVal, 0);
+	//寻找所有轮廓
 	vector<vector<Point>>contours;
 	findContours(thresh, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+	//point_array用来存储两个灯带的矩形框
 	Rect point_array[2];
 	int j = 0;
+	//遍历轮廓寻找目标轮廓
 	for (int i = 0; i < contours.size(); i++)
 	{
 		double area = contourArea(contours[i]);
+		//通过面积进行限制
 		if (area > 200)
 		{
 			Rect rect = boundingRect(contours[i]);
@@ -31,22 +36,27 @@ void draw_rect(Mat &image)
 			}
 		}
 	}
+	//得出两个矩形的上下中点
 	Point point1 = Point(point_array[0].x + point_array[0].width / 2, point_array[0].y);
 	Point point2 = Point(point_array[0].x + point_array[0].width / 2, point_array[0].y + point_array[0].height);
 	Point point3 = Point(point_array[1].x + point_array[1].width / 2, point_array[1].y);
+	//中心点
 	Point point4 = Point(point_array[1].x + point_array[1].width / 2, point_array[1].y + point_array[1].height);
 	Point point0 = Point((point1.x + point4.x) / 2, (point1.y + point4.y) / 2);
 	Point points[4] = { point1,point2,point3,point4 };
+	//将中点交错连接
 	line(image, points[0], points[3], Scalar(255, 0, 0), 1);
 	line(image, points[1], points[2], Scalar(255, 0, 0), 1);
 	circle(image, point0, 3, Scalar(0, 0, 255), -1);
 
+	//计算焦距
 	const float fx = 1604;
 	const float width_pic_img = 160;
 	const float pix_dis = 1280;
 	float dx = width_pic_img / pix_dis;
 	float f = fx * dx;
 	const float width = 230;
+	//计算距离
 	float width_pic = points[3].x - points[0].x;
 	if (width_pic < 0) width_pic = -width_pic;
 	float width_picture = width_pic * dx;
