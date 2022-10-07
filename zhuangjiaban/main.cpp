@@ -58,7 +58,11 @@ void draw_rect(Mat &image)
 int main()
 {
 	VideoCapture capture;
+	VideoWriter writer;
 	capture.open("zhuangjiaban.avi");
+	double fps = 30;
+	string result_name = "zhuangjiabanXiaoGuo.avi";
+	writer.open(result_name,capture.get(CAP_PROP_FOURCC),fps,Size(capture.get(CAP_PROP_FRAME_WIDTH),capture.get(CAP_PROP_FRAME_HEIGHT)),true);
 	if(!capture.isOpened())
 	{
 		cout << "can not find..." << endl;
