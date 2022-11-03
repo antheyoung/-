@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/main.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/main.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/main.cpp"
+},
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/src/energy_m.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/src/energy_m.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/energy_mechanism/src/energy_m.cpp"
+}
+]

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/main.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/main.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/main.cpp"
+},
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/src/exchange.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/src/exchange.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/src/exchange.cpp"
+},
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/src/pnp.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/src/pnp.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/exchange_groove/src/pnp.cpp"
+}
+]

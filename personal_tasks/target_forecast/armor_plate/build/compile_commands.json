@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/main.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/main.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/main.cpp"
+},
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/src/armor_plate.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/src/armor_plate.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/src/armor_plate.cpp"
+},
+{
+  "directory": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build",
+  "command": "/usr/bin/g++  -I/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/include -isystem /usr/local/include/opencv4 -g -o CMakeFiles/demo.dir/src/light_bar.cpp.o -c /home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/src/light_bar.cpp",
+  "file": "/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/src/light_bar.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build/CMakeFiles/demo.dir
+/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build/CMakeFiles/edit_cache.dir
+/home/theyoung/Desktop/tasks/personal_tasks/target_forecast/armor_plate/build/CMakeFiles/rebuild_cache.dir
