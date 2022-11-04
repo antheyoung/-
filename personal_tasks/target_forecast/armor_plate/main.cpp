@@ -10,7 +10,9 @@ using namespace cv;
 int main()
 {
 	VideoCapture capture;
+	VideoWriter writer;
 	capture.open("../armor_plate.avi");
+	writer.open("识别结果.avi",capture.get(CAP_PROP_FOURCC),30,Size(capture.get(CAP_PROP_FRAME_WIDTH),capture.get(CAP_PROP_FRAME_HEIGHT)),true);
 	if (!capture.isOpened())
 	{
 		cout << "can not find..." << endl;
@@ -27,7 +29,6 @@ int main()
 	int16_t s_y_last = 0;
 	while (capture.read(src))
 	{
-		// 创建装甲板对象和灯条对象
 
 		// 获取前一帧图像装甲板中心位置
 		if (i > 0)

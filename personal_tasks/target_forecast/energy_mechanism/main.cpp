@@ -10,7 +10,9 @@ using namespace cv;
 int main()
 {
     VideoCapture capture;
+    VideoWriter writer;
     capture.open("../energy_mechanism.avi");
+    writer.open("识别结果.avi",capture.get(CAP_PROP_FOURCC),30,Size(capture.get(CAP_PROP_FRAME_WIDTH),capture.get(CAP_PROP_FRAME_HEIGHT)),true);
     if (!capture.isOpened())
     {
         cout << "can not find ..." << endl;
