@@ -1,0 +1,2 @@
+add_subdirectory(singleton)
+add_subdirectory(rmath)
